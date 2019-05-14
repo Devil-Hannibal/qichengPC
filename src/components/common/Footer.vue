@@ -63,7 +63,7 @@ export default {
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
-      padding: 69px 0 79px;
+      padding: 30px 0 ;
       .main{
           p{
               font-size: 14px;

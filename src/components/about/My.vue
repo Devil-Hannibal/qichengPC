@@ -22,6 +22,8 @@ export default {
 .my{
     overflow: hidden;
     .banner{
+        width: 100%;
+        height: 360px;
         img{
             width: 100%;
             height: 360px;

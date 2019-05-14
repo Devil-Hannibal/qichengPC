@@ -1,7 +1,7 @@
 <template>
   <div class="helloWord">
       <!-- 头部 -->
-      <my-header></my-header>
+      <my-header ></my-header>
       <!-- 内容渲染 -->
       <router-view></router-view>
       <!-- 尾部 -->
@@ -24,7 +24,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-
 </style>
 
 
