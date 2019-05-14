@@ -1,12 +1,19 @@
 <template>
-  <div>
-      <el-button type="primary">主要按钮</el-button>
+  <div class="helloWord">
+      <!-- 头部 -->
+      <my-header></my-header>
   </div>
 </template>
 
 <script>
+import Header from './common/Header'
 export default {
-  
+  components:{
+    "my-header":Header,
+  },
+  data(){
+    return{}
+  },
 }
 </script>
 
