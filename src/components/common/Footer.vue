@@ -22,7 +22,9 @@
           <li class="bdr"></li>
           <li>启成优势</li>
           <li class="bdr"></li>
-          <li>联系我们</li>
+          <li>
+              <router-link to="/my">联系我们</router-link>
+          </li>
           <li class="bdr"></li>
           <li>诚聘英才</li>
           <li class="bdr"></li>

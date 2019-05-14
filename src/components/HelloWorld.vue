@@ -2,7 +2,8 @@
   <div class="helloWord">
       <!-- 头部 -->
       <my-header></my-header>
-
+      <!-- 内容渲染 -->
+      <router-view></router-view>
       <!-- 尾部 -->
       <my-footer></my-footer>
   </div>
