@@ -2,14 +2,19 @@
   <div class="helloWord">
       <!-- 头部 -->
       <my-header></my-header>
+
+      <!-- 尾部 -->
+      <my-footer></my-footer>
   </div>
 </template>
 
 <script>
 import Header from './common/Header'
+import Footer from './common/Footer'
 export default {
   components:{
     "my-header":Header,
+    "my-footer":Footer,
   },
   data(){
     return{}
