@@ -26,7 +26,9 @@
               <router-link to="/my">联系我们</router-link>
           </li>
           <li class="bdr"></li>
-          <li>诚聘英才</li>
+          <li>
+            <router-link to="/joinUs">联系我们</router-link>
+          </li>
           <li class="bdr"></li>
           <li>网站导航</li>
           <li class="bdr"></li>
