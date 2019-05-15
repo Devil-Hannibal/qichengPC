@@ -1,6 +1,7 @@
 <template>
     <div class="HelloWord">
         <!--<my-header class="header" style="display: block"></my-header>-->
+        <!-- 头部-->
         <div class="header" style="display: block">
             <!-- 头部内容区 -->
             <div class="header_container">
@@ -83,12 +84,23 @@
                 </div>
             </div>
         </div>
+        <!-- 头部 结束-->
         <!--导航-->
         <div class="header_nav" style="display: block">
             <div>
                 <div>
                     <p class="iconfont iconcaidan"></p>
                     <p>考试导航</p>
+                    <div class="nav_content">
+                        <ul class="nav_item">
+                            <li>教师</li>
+                            <li></li>
+                            <li class="nav_item_content">
+                                <div>教师资格</div>
+                                <div>教师荣誉</div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,18 +110,17 @@
         <div class="swiper-container swiper-container-initialized swiper-container-vertical" ref="swiper_wrapper" style="height:300px;width:100%;"><!--style="height:300px;"-->
             <div class="swiper-wrapper" style="height:100%;width:100%;transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
                 <div class="swiper-slide" style="height: 100%;width:100%;position: relative;" id="1">
-                    <!--<img class="swiper_Img" :src="bannerImg1" alt="" style="width:100%;height:100%;">-->
+                    <img class="swiper_Img" :src="bannerImg1" alt="" style="width:100%;height:100%;">
                     <!--嵌套banner-->
-                    <div class="swiper-container0 swiper-container-initialized swiper-container-horizontal">
+                    <!--<div class="swiper-container0 swiper-container-initialized swiper-container-horizontal">
                         <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1080px, 0px, 0px);">
-                            <div class="swiper-slide" style="width: 1080px;">Slide 4</div>
-                            <div class="swiper-slide" style="width: 1080px;">Slide 4</div>
-                            <div class="swiper-slide" style="width: 1080px;">Slide 5</div>
-                            <div class="swiper-slide" style="width: 1080px;">Slide 6</div>
-
+                            <div class="swiper-slide" style="width: 1080px;"><img class="swiper_Img" :src="bannerImg1" alt="" style="width:100%;height:100%;"></div>
+                            <div class="swiper-slide" style="width: 1080px;"><img class="swiper_Img" :src="bannerImg2" alt="" style="width:100%;height:100%;"></div>
+                            <div class="swiper-slide" style="width: 1080px;"><img class="swiper_Img" :src="bannerImg3" alt="" style="width:100%;height:100%;"></div>
+                            <div class="swiper-slide" style="width: 1080px;"><img class="swiper_Img" :src="bannerImg4" alt="" style="width:100%;height:100%;"></div>
                         </div>
                         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-                    </div>
+                    </div>-->
                     <!--嵌套banner 结束-->
                     <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
                 </div>
@@ -197,6 +208,7 @@
     import logo0 from "./../../static/images/logo.png";
     import ewm from "./../../static/images/ewm.png";
     import logo from "./../../static/images/logo.png";
+    import navImg from "./../../static/images/yc-nav.png";
     export default {
         name:'HelloWord',
         data(){
@@ -266,7 +278,7 @@
                 });
 
                 var swiper0 = new Swiper('.swiper-container0', {
-                    autoplay: true,
+                    //autoplay: true,
                 });
 
 
