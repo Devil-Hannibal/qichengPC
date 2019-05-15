@@ -196,13 +196,14 @@ export default {
             ul{
               display: flex;
                 justify-content: space-between;
+                width: 100%;
+                flex-wrap: wrap;
               li{
                 display: flex;
                 justify-content: space-between;
                 width: 30%;
                 box-shadow: 0 0 20px #e6e6ee;
                 padding: 25px 20px 30px 30px;
-                flex-wrap: wrap;
                 img{
                   width: 80px;
                   height: 80px;
