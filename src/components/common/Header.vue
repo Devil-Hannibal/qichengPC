@@ -12,7 +12,7 @@
             <div class="title">地区</div>
             <div class="title_list"  @mousemove="getJobList(1)">
               <span>福州</span>
-              <span class="iconfont icon-arrow-2"></span>
+              <span class="iconfont iconarrow-2"></span>
             </div>
           </div>
            <!-- 触摸弹出 -->
@@ -31,7 +31,7 @@
             <div class="title">栏目</div>
             <div class="title_list" @mousemove="getJobList(2)">
               <span>资讯</span>
-              <span class="iconfont icon-arrow-2"></span>
+              <span class="iconfont iconarrow-2"></span>
             </div>
           </div>
           <!-- 触摸弹出 -->
@@ -50,7 +50,7 @@
             <div class="title">项目</div>
             <div class="title_list" @mousemove="getJobList(3)">
               <span>教师</span>
-              <span class="iconfont icon-arrow-2"></span>
+              <span class="iconfont iconarrow-2"></span>
             </div>
           </div>
            <!-- 触摸弹出 -->
@@ -73,7 +73,7 @@
       </div>
       <!-- /联系电话 -->
       <div class="phone">
-        <div class="tel iconfont icon-phoneon"></div>
+        <div class="tel iconfont iconphone-on"></div>
         <div class="tel_number">
           <p>0591-88315053</p>
           <p>9:00-22:00</p>
