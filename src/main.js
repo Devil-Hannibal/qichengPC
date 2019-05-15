@@ -13,6 +13,8 @@ import './../static/iconfont/iconfont.css'		//引入字体样式
 
 import "swiper/dist/css/swiper.min.css"   //引入swiper样式
 
+import store from './store'
+
 Vue.prototype.$axios=axios
 
 Vue.use(ElementUI);
@@ -25,6 +27,7 @@ new Vue({
   el: '#app',
   router,
   axios,
+  store,
   render: h => h(App)
 })
 
