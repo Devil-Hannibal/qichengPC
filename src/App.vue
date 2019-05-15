@@ -17,19 +17,23 @@
         },
         data(){
             return{
-                isHide:false,
+                isHide:true,
             }
+        },
+        mounted(){
+        // this.init()
         },
         methods:{
             init(){
                 var path=this.$route.path
-                if(path=='./'){
-                    this.isHide=true
-                }else{
+                console.log(path)
+                if(path=='/'){
                     this.isHide=false
+                }else{
+                    this.isHide=true
                 }
             }
-        }
+        },
     }
 </script>
 

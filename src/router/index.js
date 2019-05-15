@@ -13,23 +13,16 @@ export default new Router({
       path: '/',
       name: 'HelloWorld',
       component: HelloWorld,
-      /*children: [
-        {
-          path: '/my',
-          name: 'my', 
-          component: My, 
-          redirect:'./talkMe',
-          children: [
-            { path: '/talkMe', name: 'talkMe', component: TalkMe }  //联系我们
-          ]
-        }
-      ]*/
+      
     },
-      {
-          path: '/my',
-          name: 'HelloWorld',
-          component: TalkMe,
-
-      }
+    {
+      path: '/my',
+      name: 'my', 
+      component: My, 
+      redirect:'./talkMe',
+      children: [
+        { path: '/talkMe', name: 'talkMe', component: TalkMe }  //联系我们
+      ]
+    }
   ]
 })

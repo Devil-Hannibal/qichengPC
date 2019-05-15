@@ -33,6 +33,7 @@
                     <p>扫一扫添加我们的微信</p>
                     <p>福州：wxp20140820</p>
                   </div>
+                  <span class="iconfont icon-jiang pos"></span>
                 </li>
                   <li>
                   <div>
@@ -42,6 +43,8 @@
                     <p>扫一扫添加我们的微信</p>
                     <p>福州：wxp20140820</p>
                   </div>
+                  <span class="iconfont icon-jiang pos"></span>
+                  
                 </li>
                   <li>
                   <div>
@@ -51,6 +54,7 @@
                     <p>扫一扫添加我们的微信</p>
                     <p>福州：wxp20140820</p>
                   </div>
+                  <span class="iconfont icon-jiang pos"></span>
                 </li>
                 <li>
                   <div>
@@ -60,6 +64,7 @@
                     <p>扫一扫添加我们的微信</p>
                     <p>福州：wxp20140820</p>
                   </div>
+                  <span class="iconfont icon-jiang pos"></span>
                 </li>
                   <li>
                   <div>
@@ -69,6 +74,7 @@
                     <p>扫一扫添加我们的微信</p>
                     <p>福州：wxp20140820</p>
                   </div>
+                  <span class="iconfont icon-jiang pos"></span>
                 </li>
                   <li>
                   <div>
@@ -78,11 +84,140 @@
                     <p>扫一扫添加我们的微信</p>
                     <p>福州：wxp20140820</p>
                   </div>
+                  <span class="iconfont icon-jiang pos"></span>
                 </li>
               </ul>
             </div>
-            <div v-show="cur==1">内容二</div>
-            <div v-show="cur==2">内容三</div>
+            <div v-show="cur==1">
+               <ul>
+                <li>
+                  <div>
+                    <img :src="ewm" alt="">
+                  </div>
+                  <div>
+                    <p>扫一扫添加我们的小程序</p>
+                    <p>福州：wxp20140820</p>
+                  </div>
+                  <span class="iconfont icon-jiang pos"></span>
+                </li>
+                  <li>
+                  <div>
+                    <img :src="ewm" alt="">
+                  </div>
+                  <div>
+                    <p>扫一扫添加我们的小程序</p>
+                    <p>福州：wxp20140820</p>
+                  </div>
+                  <span class="iconfont icon-jiang pos"></span>
+                  
+                </li>
+                  <li>
+                  <div>
+                    <img :src="ewm" alt="">
+                  </div>
+                  <div>
+                    <p>扫一扫添加我们的小程序</p>
+                    <p>福州：wxp20140820</p>
+                  </div>
+                  <span class="iconfont icon-jiang pos"></span>
+                </li>
+                <li>
+                  <div>
+                    <img :src="ewm" alt="">
+                  </div>
+                  <div>
+                    <p>扫一扫添加我们的小程序</p>
+                    <p>福州：wxp20140820</p>
+                  </div>
+                  <span class="iconfont icon-jiang pos"></span>
+                </li>
+                  <li>
+                  <div>
+                    <img :src="ewm" alt="">
+                  </div>
+                  <div>
+                    <p>扫一扫添加我们的小程序</p>
+                    <p>福州：wxp20140820</p>
+                  </div>
+                  <span class="iconfont icon-jiang pos"></span>
+                </li>
+                  <li>
+                  <div>
+                    <img :src="ewm" alt="">
+                  </div>
+                  <div>
+                    <p>扫一扫添加我们的小程序</p>
+                    <p>福州：wxp20140820</p>
+                  </div>
+                  <span class="iconfont icon-jiang pos"></span>
+                </li>
+              </ul>
+            </div>
+            <div v-show="cur==2">
+               <ul>
+                <li>
+                  <div>
+                    <img :src="ewm" alt="">
+                  </div>
+                  <div>
+                    <p>扫一扫添加我们的QQ</p>
+                    <p>福州：wxp20140820</p>
+                  </div>
+                  <span class="iconfont icon-jiang pos"></span>
+                </li>
+                  <li>
+                  <div>
+                    <img :src="ewm" alt="">
+                  </div>
+                  <div>
+                    <p>扫一扫添加我们的QQ</p>
+                    <p>福州：wxp20140820</p>
+                  </div>
+                  <span class="iconfont icon-jiang pos"></span>
+                  
+                </li>
+                  <li>
+                  <div>
+                    <img :src="ewm" alt="">
+                  </div>
+                  <div>
+                    <p>扫一扫添加我们的QQ</p>
+                    <p>福州：wxp20140820</p>
+                  </div>
+                  <span class="iconfont icon-jiang pos"></span>
+                </li>
+                <li>
+                  <div>
+                    <img :src="ewm" alt="">
+                  </div>
+                  <div>
+                    <p>扫一扫添加我们的QQ</p>
+                    <p>福州：wxp20140820</p>
+                  </div>
+                  <span class="iconfont icon-jiang pos"></span>
+                </li>
+                  <li>
+                  <div>
+                    <img :src="ewm" alt="">
+                  </div>
+                  <div>
+                    <p>扫一扫添加我们的QQ</p>
+                    <p>福州：wxp20140820</p>
+                  </div>
+                  <span class="iconfont icon-jiang pos"></span>
+                </li>
+                  <li>
+                  <div>
+                    <img :src="ewm" alt="">
+                  </div>
+                  <div>
+                    <p>扫一扫添加我们的QQ</p>
+                    <p>福州：wxp20140820</p>
+                  </div>
+                  <span class="iconfont icon-jiang pos"></span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -179,7 +314,7 @@ export default {
             font-size: 14px;
             height: 32px;
             line-height: 32px;
-            cursor:pointer
+            cursor:pointer;
           }
           li.now::before{
             display: block;
@@ -193,6 +328,7 @@ export default {
         }
         // tab内容区
         .tab-content{
+          margin-top: 28px;
             ul{
               display: flex;
                 justify-content: space-between;
@@ -200,10 +336,13 @@ export default {
                 flex-wrap: wrap;
               li{
                 display: flex;
-                justify-content: space-between;
-                width: 30%;
+                justify-content: start;
+                width: 27%;
                 box-shadow: 0 0 20px #e6e6ee;
                 padding: 25px 20px 30px 30px;
+                margin-top: 20px;
+                position: relative;
+                cursor:pointer;
                 img{
                   width: 80px;
                   height: 80px;
@@ -212,6 +351,15 @@ export default {
                   font-size: 16px;
                   color: #333333;
                   line-height: 27px;
+                  padding-left: 20px;
+                }
+                .pos{
+                  position: absolute;
+                  right: 22px;
+                  bottom: 22px;
+                  color: #d0d0d0;
+                  font-size: 30px;
+
                 }
               }
             }

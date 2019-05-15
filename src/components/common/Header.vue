@@ -107,6 +107,7 @@ export default {
 <style lang="less" scoped>
 .header {
   width: 100%;
+  height: auto;
 }
 .header_container {
   display: flex;
@@ -164,14 +165,18 @@ export default {
           height: 10px;
           background-color: white;
           width: 10px;
+          
         }
         ul {
             width: 100%;
+            background-color: #fff;
+            
           li {
             border-bottom: 1px solid #dddddd;
             font-size: 16px;
             line-height: 36px;
             color: #333333;
+            
             &:last-child {
               border: none;
             }
