@@ -95,7 +95,7 @@ export default {
     };
   },
   methods:{
-    //   进入触摸弹出列表
+      //   进入触摸弹出列表
       getJobList(Num){
           this.isJobType=Num
          

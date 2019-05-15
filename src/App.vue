@@ -25,7 +25,7 @@
         },
         methods:{
             init(){
-                var path=this.$route.path
+                var path=this.$route.path;
                 console.log(path)
                 if(path=='/'){
                     this.isHide=false
