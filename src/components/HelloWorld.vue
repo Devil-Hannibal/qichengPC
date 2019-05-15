@@ -195,8 +195,6 @@
 </template>
 
 <script>
-    import Header from './common/Header'
-    import Footer from './common/Footer'
     import Swiper from "swiper"
     import banner1_0 from "../../static/images/yc-banner1_0.png"
     import banner2 from "../../static/images/yc-banner2.png"
@@ -227,10 +225,6 @@
                 logo,    //底部图标2
                 navImg   //nav图片
             }
-        },
-        components:{
-            "my-header":Header,
-            "my-footer":Footer,
         },
         mounted(){
             this.getData();
@@ -550,38 +544,6 @@
     }
 </style>
 
-
-
-
-
-<!--<template>
-  <div class="HelloWord">
-      &lt;!&ndash; 头部 &ndash;&gt;
-      <my-header ></my-header>&lt;!&ndash;style="display: none"&ndash;&gt;
-      &lt;!&ndash; 内容渲染 &ndash;&gt;
-
-      &lt;!&ndash; 尾部 &ndash;&gt;
-      <my-footer></my-footer>
-  </div>
-</template>
-
-<script>
-import Header from './common/Header'
-import Footer from './common/Footer'
-export default {
-    components:{
-        "my-header":Header,
-        "my-footer":Footer,
-    },
-    data(){
-        return{}
-    },
-}
-</script>
-
-<style lang="less" scoped>
-
-</style>-->
 
 
 
