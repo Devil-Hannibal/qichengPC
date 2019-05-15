@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-    <my-header v-if="isHide"></my-header>
     <router-view/>
-    <my-footer  v-if="isHide"></my-footer>
   </div>
 </template>
 
@@ -17,23 +15,10 @@
         },
         data(){
             return{
-                isHide:true,
+               
             }
-        },
-        mounted(){
-        // this.init()
-        },
-        methods:{
-            init(){
-                var path=this.$route.path;
-                console.log(path)
-                if(path=='/'){
-                    this.isHide=false
-                }else{
-                    this.isHide=true
-                }
-            }
-        },
+        }
+        
     }
 </script>
 

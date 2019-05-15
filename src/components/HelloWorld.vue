@@ -197,7 +197,6 @@
     import logo0 from "./../../static/images/logo.png";
     import ewm from "./../../static/images/ewm.png";
     import logo from "./../../static/images/logo.png";
-    import navImg from "./../../static/images/yc-nav.png";
     export default {
         name:'HelloWord',
         data(){

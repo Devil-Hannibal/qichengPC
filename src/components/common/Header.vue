@@ -1,22 +1,22 @@
 <template>
-  <div class="header">
+  <div class="header" :style="{'background-color':titleBgColor}" >
     <!-- 头部内容区 -->
-    <div class="header_container">
+    <header class="header_container claerfix" :style="{'width':titleWidth+'px'}">
       <div class="logo">
         <img :src="Logo" alt>
       </div>
       <div class="job">
         <!-- 地区 -->
-        <div class="list" >
+        <div class="list">
           <div class="region">
             <div class="title">地区</div>
-            <div class="title_list"  @mousemove="getJobList(1)">
+            <div class="title_list" @mousemove="getJobList(1)">
               <span>福州</span>
               <span class="iconfont iconarrow-2"></span>
             </div>
           </div>
-           <!-- 触摸弹出 -->
-          <div class="job_list" :class="this.isJobType==1? 'active':'' " >
+          <!-- 触摸弹出 -->
+          <div class="job_list" :class="this.isJobType==1? 'active':'' ">
             <div class="posScale"></div>
             <ul>
               <li>上海</li>
@@ -35,7 +35,7 @@
             </div>
           </div>
           <!-- 触摸弹出 -->
-          <div class="job_list" :class="this.isJobType==2? 'active':'' " > 
+          <div class="job_list" :class="this.isJobType==2? 'active':'' ">
             <div class="posScale"></div>
             <ul>
               <li>资讯</li>
@@ -53,8 +53,8 @@
               <span class="iconfont iconarrow-2"></span>
             </div>
           </div>
-           <!-- 触摸弹出 -->
-          <div class="job_list" :class="this.isJobType==3? 'active':'' " >
+          <!-- 触摸弹出 -->
+          <div class="job_list" :class="this.isJobType==3? 'active':'' ">
             <div class="posScale"></div>
             <ul>
               <li>老师</li>
@@ -66,20 +66,21 @@
         </div>
       </div>
       <!-- 搜索 -->
-      <div class="search">
-        <span class="iconfont icon-fangdajing pos"></span>
+      <div class="search" :class="{posFloat:titleWidth==1200}">
+        <span class="iconfont iconsearch pos"></span>
         <input type="text" placeholder="请输入考试类别，查看考试资讯。">
         <button>搜索</button>
       </div>
       <!-- /联系电话 -->
-      <div class="phone">
-        <div class="tel iconfont iconphone-on"></div>
-        <div class="tel_number">
-          <p>0591-88315053</p>
-          <p>9:00-22:00</p>
+
+        <div class="phone" v-show="titleWidth==1200">
+          <div class="tel iconfont iconphone-on"></div>
+          <div class="tel_number">
+            <p>0591-88315053</p>
+            <p>9:00-22:00</p>
+          </div>
         </div>
-      </div>
-    </div>
+    </header>
   </div>
 </template>
 
@@ -87,19 +88,31 @@
 import logo from "./../../../static/images/logo.png";
 
 export default {
+  props:{
+    'titleBgColor': String, //  标题背景颜色
+    'titleWidth':{          //默认宽度1200
+      type:Number,
+      default:()=>1200
+    }
+  },
   data() {
     return {
-      Logo: logo ,//logo背景
-      isJobType:0,//工作类型
-
+      Logo: logo, //logo背景
+      isJobType: 0 //工作类型
     };
   },
-  methods:{
-      //   进入触摸弹出列表
-      getJobList(Num){
-          this.isJobType=Num
-         
-      },
+  mounted(){
+    this.init()
+  },
+  methods: {
+    //   进入触摸弹出列表
+    getJobList(Num) {
+      this.isJobType = Num;
+    },
+    init(){
+      var a =this.$store.state.count
+      console.log(this.$store.state.Num)
+    }
   }
 };
 </script>
@@ -107,17 +120,17 @@ export default {
 <style lang="less" scoped>
 .header {
   width: 100%;
-  height: auto;
+  height: 130px;
 }
 .header_container {
-  display: flex;
-  justify-content: start;
   width: 1200px;
   margin: 0 auto;
   padding-top: 26px;
   padding-bottom: 35px;
+  
   // logo
   .logo {
+    float: left;
     width: 185px;
     height: 70px;
     margin: auto 0;
@@ -128,17 +141,18 @@ export default {
   }
   // 分类区
   .job {
+    float: left;
     display: flex;
     flex: start;
     padding-top: 26px;
     padding-bottom: 26px;
     padding-left: 16px;
     .list {
-      &>div {
+      & > div {
         display: flex;
         justify-content: start;
         position: relative;
-        cursor:pointer;
+        cursor: pointer;
       }
 
       .title {
@@ -146,8 +160,8 @@ export default {
         font-size: 16px;
         width: 35px;
       }
-      .job_list.active{
-          display: block;
+      .job_list.active {
+        display: block;
       }
       .job_list {
         position: absolute;
@@ -165,18 +179,17 @@ export default {
           height: 10px;
           background-color: white;
           width: 10px;
-          
         }
         ul {
-            width: 100%;
-            background-color: #fff;
-            
+          width: 100%;
+          background-color: #fff;
+
           li {
             border-bottom: 1px solid #dddddd;
             font-size: 16px;
             line-height: 36px;
             color: #333333;
-            
+
             &:last-child {
               border: none;
             }
@@ -198,6 +211,7 @@ export default {
   }
   // 搜索
   .search {
+    float:right;
     padding-top: 21px;
     padding-bottom: 10px;
     position: relative;
@@ -254,6 +268,9 @@ export default {
         font-size: 16px;
       }
     }
+  }
+  .posFloat{
+    float: left;
   }
 }
 </style>

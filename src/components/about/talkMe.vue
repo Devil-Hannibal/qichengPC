@@ -33,7 +33,7 @@
                     <p>扫一扫添加我们的微信</p>
                     <p>福州：wxp20140820</p>
                   </div>
-                  <span class="iconfont icon-jiang pos"></span>
+                  <span class="iconfont iconchangjiantou pos"></span>
                 </li>
                   <li>
                   <div>
@@ -43,7 +43,7 @@
                     <p>扫一扫添加我们的微信</p>
                     <p>福州：wxp20140820</p>
                   </div>
-                  <span class="iconfont icon-jiang pos"></span>
+                  <span class="iconfont iconchangjiantou pos"></span>
                   
                 </li>
                   <li>
@@ -54,7 +54,7 @@
                     <p>扫一扫添加我们的微信</p>
                     <p>福州：wxp20140820</p>
                   </div>
-                  <span class="iconfont icon-jiang pos"></span>
+                  <span class="iconfont iconchangjiantou pos"></span>
                 </li>
                 <li>
                   <div>
@@ -64,7 +64,7 @@
                     <p>扫一扫添加我们的微信</p>
                     <p>福州：wxp20140820</p>
                   </div>
-                  <span class="iconfont icon-jiang pos"></span>
+                  <span class="iconfont iconchangjiantou pos"></span>
                 </li>
                   <li>
                   <div>
@@ -74,7 +74,7 @@
                     <p>扫一扫添加我们的微信</p>
                     <p>福州：wxp20140820</p>
                   </div>
-                  <span class="iconfont icon-jiang pos"></span>
+                  <span class="iconfont iconchangjiantou pos"></span>
                 </li>
                   <li>
                   <div>
@@ -84,7 +84,7 @@
                     <p>扫一扫添加我们的微信</p>
                     <p>福州：wxp20140820</p>
                   </div>
-                  <span class="iconfont icon-jiang pos"></span>
+                  <span class="iconfont iconchangjiantou pos"></span>
                 </li>
               </ul>
             </div>
@@ -98,7 +98,7 @@
                     <p>扫一扫添加我们的小程序</p>
                     <p>福州：wxp20140820</p>
                   </div>
-                  <span class="iconfont icon-jiang pos"></span>
+                  <span class="iconfont iconchangjiantou pos"></span>
                 </li>
                   <li>
                   <div>
@@ -108,7 +108,7 @@
                     <p>扫一扫添加我们的小程序</p>
                     <p>福州：wxp20140820</p>
                   </div>
-                  <span class="iconfont icon-jiang pos"></span>
+                  <span class="iconfont iconchangjiantou pos"></span>
                   
                 </li>
                   <li>
@@ -119,7 +119,7 @@
                     <p>扫一扫添加我们的小程序</p>
                     <p>福州：wxp20140820</p>
                   </div>
-                  <span class="iconfont icon-jiang pos"></span>
+                  <span class="iconfont iconchangjiantou pos"></span>
                 </li>
                 <li>
                   <div>
@@ -129,7 +129,7 @@
                     <p>扫一扫添加我们的小程序</p>
                     <p>福州：wxp20140820</p>
                   </div>
-                  <span class="iconfont icon-jiang pos"></span>
+                  <span class="iconfont iconchangjiantou pos"></span>
                 </li>
                   <li>
                   <div>
@@ -139,7 +139,7 @@
                     <p>扫一扫添加我们的小程序</p>
                     <p>福州：wxp20140820</p>
                   </div>
-                  <span class="iconfont icon-jiang pos"></span>
+                  <span class="iconfont iconchangjiantou pos"></span>
                 </li>
                   <li>
                   <div>
@@ -149,7 +149,7 @@
                     <p>扫一扫添加我们的小程序</p>
                     <p>福州：wxp20140820</p>
                   </div>
-                  <span class="iconfont icon-jiang pos"></span>
+                  <span class="iconfont iconchangjiantou pos"></span>
                 </li>
               </ul>
             </div>
@@ -163,7 +163,7 @@
                     <p>扫一扫添加我们的QQ</p>
                     <p>福州：wxp20140820</p>
                   </div>
-                  <span class="iconfont icon-jiang pos"></span>
+                  <span class="iconfont iconchangjiantou pos"></span>
                 </li>
                   <li>
                   <div>
@@ -173,7 +173,7 @@
                     <p>扫一扫添加我们的QQ</p>
                     <p>福州：wxp20140820</p>
                   </div>
-                  <span class="iconfont icon-jiang pos"></span>
+                  <span class="iconfont iconchangjiantou pos"></span>
                   
                 </li>
                   <li>
@@ -184,7 +184,7 @@
                     <p>扫一扫添加我们的QQ</p>
                     <p>福州：wxp20140820</p>
                   </div>
-                  <span class="iconfont icon-jiang pos"></span>
+                  <span class="iconfont iconchangjiantou pos"></span>
                 </li>
                 <li>
                   <div>
@@ -194,7 +194,7 @@
                     <p>扫一扫添加我们的QQ</p>
                     <p>福州：wxp20140820</p>
                   </div>
-                  <span class="iconfont icon-jiang pos"></span>
+                  <span class="iconfont iconchangjiantou pos"></span>
                 </li>
                   <li>
                   <div>
@@ -204,7 +204,7 @@
                     <p>扫一扫添加我们的QQ</p>
                     <p>福州：wxp20140820</p>
                   </div>
-                  <span class="iconfont icon-jiang pos"></span>
+                  <span class="iconfont iconchangjiantou pos"></span>
                 </li>
                   <li>
                   <div>
@@ -214,7 +214,7 @@
                     <p>扫一扫添加我们的QQ</p>
                     <p>福州：wxp20140820</p>
                   </div>
-                  <span class="iconfont icon-jiang pos"></span>
+                  <span class="iconfont iconchangjiantou pos"></span>
                 </li>
               </ul>
             </div>
