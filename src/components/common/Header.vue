@@ -40,7 +40,7 @@
             <ul>
               <li>资讯</li>
               <li>课程</li>
-              <li>题库</li>
+                <router-link to='/qbHome' tag="li">题库</router-link>
               <li>图书</li>
             </ul>
           </div>
@@ -57,10 +57,10 @@
           <div class="job_list" :class="{active:this.isJobType==3 }"  @mouseout="outJobList">
             <div class="posScale"></div>
             <ul>
-              <li @click="init">老师</li>
+              <li>老师</li>
               <li>英语</li>
               <li>数学</li>
-              <li @click="init">外语</li>
+              <li>外语</li>
             </ul>
           </div>
         </div>
@@ -190,13 +190,14 @@ export default {
           position: absolute;
           padding: 0 10px;
           box-sizing: border-box;
-          box-shadow: 0 0 10px #efefef;
+          box-shadow: 0 0 10px #e3e7eb;
 
           li {
             border-bottom: 1px solid #dddddd;
             font-size: 16px;
             line-height: 36px;
             color: #333333;
+            cursor:pointer;
 
             &:last-child {
               border: none;
