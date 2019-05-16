@@ -1,6 +1,6 @@
 <template>
   <div class="my">
-    <my-header :titleBgColor='titleBgc' ></my-header>
+    <my-header :titleBgColor='titleBgc'></my-header>
     <div class="banner">
       <img :src="banner" alt>
     </div>

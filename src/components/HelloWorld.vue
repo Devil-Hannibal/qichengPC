@@ -153,7 +153,7 @@
         </div>
         <!-- 轮播 结束-->
         <!--<router-view style="height:500px"></router-view>-->
-        <div class="footer" style="display: none">
+        <!-- <div class="footer" style="display: none">
             <div class="top">
                 <div class="main">
                     <p>
@@ -190,7 +190,7 @@
                 </div>
             </div>
             <div class="bottom">Copyright Reserved 2018 福州启成教育信息咨询有限公司 版权所有 沪ICP备17043689号</div>
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -206,7 +206,7 @@
     import logo0 from "./../../static/images/logo.png";
     import ewm from "./../../static/images/ewm.png";
     import logo from "./../../static/images/logo.png";
-    import navImg from "./../../static/images/yc-nav.png";
+  
     export default {
         name:'HelloWord',
         data(){
@@ -223,7 +223,6 @@
                 isJobType:0,//工作类型
                 ewm,     //底部图标1
                 logo,    //底部图标2
-                navImg   //nav图片
             }
         },
         mounted(){

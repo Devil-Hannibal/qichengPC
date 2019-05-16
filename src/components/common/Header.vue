@@ -7,16 +7,16 @@
       </div>
       <div class="job">
         <!-- 地区 -->
-        <div class="list">
+        <div class="list"  @mousemove="getJobList(1)">
           <div class="region">
             <div class="title">地区</div>
-            <div class="title_list" @mousemove="getJobList(1)">
+            <div class="title_list">
               <span>福州</span>
               <span class="iconfont iconarrow-2"></span>
             </div>
           </div>
           <!-- 触摸弹出 -->
-          <div class="job_list" :class="this.isJobType==1? 'active':'' ">
+          <div class="job_list" :class="{active:this.isJobType==1 }"  @mouseout="outJobList">
             <div class="posScale"></div>
             <ul>
               <li>上海</li>
@@ -26,16 +26,16 @@
             </ul>
           </div>
         </div>
-        <div class="list">
+        <div class="list" @mousemove="getJobList(2)">
           <div class="column">
             <div class="title">栏目</div>
-            <div class="title_list" @mousemove="getJobList(2)">
+            <div class="title_list" >
               <span>资讯</span>
               <span class="iconfont iconarrow-2"></span>
             </div>
           </div>
           <!-- 触摸弹出 -->
-          <div class="job_list" :class="this.isJobType==2? 'active':'' ">
+          <div class="job_list" :class="{active:this.isJobType==2 }"  @mouseout="outJobList">
             <div class="posScale"></div>
             <ul>
               <li>资讯</li>
@@ -45,31 +45,31 @@
             </ul>
           </div>
         </div>
-        <div class="list">
+        <div class="list"  @mousemove="getJobList(3)">
           <div class="project">
             <div class="title">项目</div>
-            <div class="title_list" @mousemove="getJobList(3)">
+            <div class="title_list">
               <span>教师</span>
               <span class="iconfont iconarrow-2"></span>
             </div>
           </div>
           <!-- 触摸弹出 -->
-          <div class="job_list" :class="this.isJobType==3? 'active':'' ">
+          <div class="job_list" :class="{active:this.isJobType==3 }"  @mouseout="outJobList">
             <div class="posScale"></div>
             <ul>
-              <li>老师</li>
+              <li @click="init">老师</li>
               <li>英语</li>
               <li>数学</li>
-              <li>外语</li>
+              <li @click="init">外语</li>
             </ul>
           </div>
         </div>
       </div>
       <!-- 搜索 -->
       <div class="search" :class="{posFloat:titleWidth==1200}">
-        <span class="iconfont iconsearch pos"></span>
-        <input type="text" placeholder="请输入考试类别，查看考试资讯。">
-        <button>搜索</button>
+        <span class="iconfont iconsearch pos"  :class="{pos1500:titleWidth==1500}"></span>
+        <input type="text" placeholder="请输入考试类别，查看考试资讯。" :class="{input1500:titleWidth==1500}">
+        <button :class="{button1500:titleWidth==1500}">搜索</button>
       </div>
       <!-- /联系电话 -->
 
@@ -109,6 +109,9 @@ export default {
     getJobList(Num) {
       this.isJobType = Num;
     },
+    outJobList(){
+      this.isJobType = 0;
+    },
     init(){
       var a =this.$store.state.count
       console.log(this.$store.state.Num)
@@ -120,13 +123,13 @@ export default {
 <style lang="less" scoped>
 .header {
   width: 100%;
-  height: 130px;
+  padding-top: 26px;
+  padding-bottom: 30px;
+  
 }
 .header_container {
-  width: 1200px;
   margin: 0 auto;
-  padding-top: 26px;
-  padding-bottom: 35px;
+  height: 70px;
   
   // logo
   .logo {
@@ -148,10 +151,10 @@ export default {
     padding-bottom: 26px;
     padding-left: 16px;
     .list {
+      position: relative;
       & > div {
         display: flex;
         justify-content: start;
-        position: relative;
         cursor: pointer;
       }
 
@@ -165,12 +168,13 @@ export default {
       }
       .job_list {
         position: absolute;
-        top: 83px;
+        top: 32px;
         box-shadow: 0 0 10px #f0f0f0;
         width: 90px;
         padding: 0 10px;
         box-sizing: border-box;
         display: none;
+        z-index: 99;
         .posScale {
           position: absolute;
           top: 0;
@@ -183,6 +187,10 @@ export default {
         ul {
           width: 100%;
           background-color: #fff;
+          position: absolute;
+          padding: 0 10px;
+          box-sizing: border-box;
+          box-shadow: 0 0 10px #efefef;
 
           li {
             border-bottom: 1px solid #dddddd;
@@ -216,11 +224,15 @@ export default {
     padding-bottom: 10px;
     position: relative;
     .pos {
+      font-size: 20px;
       position: absolute;
       z-index: 88;
       top: 30px;
       left: 10px;
       color: #d7d7d7;
+    }
+    .pos1500{
+      color: #459df5;
     }
 
     // 输入框
@@ -231,6 +243,11 @@ export default {
       padding-left: 40px;
       box-sizing: border-box;
     }
+    .input1500{
+      width: 535px;
+      border:1px solid #4a90ff;
+      
+    }
     button {
       background: #eeeeee;
       outline: none;
@@ -240,6 +257,10 @@ export default {
       top: 22px;
       right: 0;
       color: #666666;
+    }
+    .button1500{
+      background-color:  #4a90ff;
+      color: white;
     }
   }
   // 联系电话
