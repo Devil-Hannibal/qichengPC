@@ -74,7 +74,7 @@
               </div>
               <div class="content">
                 <el-table :data="tableData" style="width: 100%" height="200">
-                  <el-table-column prop="name" label="目录" width="620" >
+                  <el-table-column prop="name" label="目录" width="620">
                     <template slot-scope="scope">
                       <i class="iconfont iconarrow posIcon"></i>
                       <span style="margin-left: 10px">{{ scope.row.name }}</span>
@@ -93,18 +93,194 @@
                       <span>%</span>
                     </template>
                   </el-table-column>
-                  <el-table-column  label="操作" width="100">
-                      <span class="iconfont iconqianbi" @click="init"></span>
+                  <el-table-column label="操作" width="100">
+                    <span class="iconfont iconqianbi" @click="init"></span>
                   </el-table-column>
                 </el-table>
               </div>
             </div>
             <!-- 题的列表 -->
             <div class="questionList">
-
-                <div class="questionList_tab">
-                    
+              <div class="questionList_tab">
+                <div class="title">
+                  <div :class="{active:questionList==1}" @click="questionList=1">历年真题</div>
+                  <div :class="{active:questionList==2}" @click="questionList=2">模拟考试</div>
                 </div>
+                <div class="content">
+                  <ul v-show="questionList==1">
+                    <li class="item">
+                      <div class="box">
+                        <p :style="{backgroundImage: 'url(' + bg1 + ')' }">开始做题</p>
+                        <p>2015年</p>
+                        <p>
+                          <span>一级建造师</span>
+                          <span>建设工程</span>
+                        </p>
+                        <p>
+                          <span>经济</span>
+                          <span>真题</span>
+                        </p>
+                        <p>
+                          总分
+                          <span>222</span>分，
+                          <span>90</span>道试题
+                        </p>
+                      </div>
+                      <!-- 遮罩 -->
+                      <div class="zhezhao iconfont iconsuotoucopy" v-show="lock"></div>
+                    </li>
+                    <li class="item">
+                      <div class="box">
+                        <p :style="{backgroundImage: 'url(' + bg1 + ')' }">开始做题</p>
+                        <p>2015年</p>
+                        <p>
+                          <span>一级建造师</span>
+                          <span>建设工程</span>
+                        </p>
+                        <p>
+                          <span>经济</span>
+                          <span>真题</span>
+                        </p>
+                        <p>
+                          总分
+                          <span>222</span>分，
+                          <span>90</span>道试题
+                        </p>
+                      </div>
+                      <!-- 遮罩 -->
+                      <div class="zhezhao iconfont iconsuotoucopy" v-show="lock==false"></div>
+                    </li>
+                    <li class="item">
+                      <div class="box">
+                        <p :style="{backgroundImage: 'url(' + bg1 + ')' }">开始做题</p>
+                        <p>2015年</p>
+                        <p>
+                          <span>一级建造师</span>
+                          <span>建设工程</span>
+                        </p>
+                        <p>
+                          <span>经济</span>
+                          <span>真题</span>
+                        </p>
+                        <p>
+                          总分
+                          <span>222</span>分，
+                          <span>90</span>道试题
+                        </p>
+                      </div>
+                      <!-- 遮罩 -->
+                      <div class="zhezhao iconfont iconsuotoucopy" v-show="lock==true"></div>
+                    </li>
+                    <li class="item">
+                      <div class="box">
+                        <p :style="{backgroundImage: 'url(' + bg1 + ')' }">开始做题</p>
+                        <p>2015年</p>
+                        <p>
+                          <span>一级建造师</span>
+                          <span>建设工程</span>
+                        </p>
+                        <p>
+                          <span>经济</span>
+                          <span>真题</span>
+                        </p>
+                        <p>
+                          总分
+                          <span>222</span>分，
+                          <span>90</span>道试题
+                        </p>
+                      </div>
+                      <!-- 遮罩 -->
+                      <div class="zhezhao iconfont iconsuotoucopy" v-show="lock==false"></div>
+                    </li>
+                    <li class="item">
+                      <div class="box">
+                        <p :style="{backgroundImage: 'url(' + bg1 + ')' }">开始做题</p>
+                        <p>2015年</p>
+                        <p>
+                          <span>一级建造师</span>
+                          <span>建设工程</span>
+                        </p>
+                        <p>
+                          <span>经济</span>
+                          <span>真题</span>
+                        </p>
+                        <p>
+                          总分
+                          <span>222</span>分，
+                          <span>90</span>道试题
+                        </p>
+                      </div>
+                      <!-- 遮罩 -->
+                      <div class="zhezhao iconfont iconsuotoucopy" v-show="lock==false"></div>
+                    </li>
+                    <li class="item">
+                      <div class="box">
+                        <p :style="{backgroundImage: 'url(' + bg1 + ')' }">开始做题</p>
+                        <p>2015年</p>
+                        <p>
+                          <span>一级建造师</span>
+                          <span>建设工程</span>
+                        </p>
+                        <p>
+                          <span>经济</span>
+                          <span>真题</span>
+                        </p>
+                        <p>
+                          总分
+                          <span>222</span>分，
+                          <span>90</span>道试题
+                        </p>
+                      </div>
+                      <!-- 遮罩 -->
+                      <div class="zhezhao iconfont iconsuotoucopy" v-show="lock==false"></div>
+                    </li>
+                    <li class="item">
+                      <div class="box">
+                        <p :style="{backgroundImage: 'url(' + bg1 + ')' }">开始做题</p>
+                        <p>2015年</p>
+                        <p>
+                          <span>一级建造师</span>
+                          <span>建设工程</span>
+                        </p>
+                        <p>
+                          <span>经济</span>
+                          <span>真题</span>
+                        </p>
+                        <p>
+                          总分
+                          <span>222</span>分，
+                          <span>90</span>道试题
+                        </p>
+                      </div>
+                      <!-- 遮罩 -->
+                      <div class="zhezhao iconfont iconsuotoucopy" v-show="lock==false"></div>
+                    </li>
+                    <li class="item">
+                      <div class="box">
+                        <p :style="{backgroundImage: 'url(' + bg1 + ')' }">开始做题</p>
+                        <p>2015年</p>
+                        <p>
+                          <span>一级建造师</span>
+                          <span>建设工程</span>
+                        </p>
+                        <p>
+                          <span>经济</span>
+                          <span>真题</span>
+                        </p>
+                        <p>
+                          总分
+                          <span>222</span>分，
+                          <span>90</span>道试题
+                        </p>
+                      </div>
+                      <!-- 遮罩 -->
+                      <div class="zhezhao iconfont iconsuotoucopy" v-show="lock==false"></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <el-pagination layout="prev, pager, next" :total="50" :page-size="9" prev-text="上一页" next-text="下一页"></el-pagination>
             </div>
           </li>
         </ul>
@@ -123,6 +299,7 @@
 <script>
 import Header from "./../common/Header";
 import Footer from "./../common/Footer";
+import bg1 from "./../../../static/images/111.png";
 
 export default {
   name: "qbHome",
@@ -132,9 +309,12 @@ export default {
   },
   data() {
     return {
+      bg1,
+      lock: true, //答题锁
       titleBgc: "#f1f5f9", //头部的背景颜色
       TWidth: 1555, ///头部的宽度
       questionSelect: 1, //题库tab默认为1
+      questionList: 1, //题切换
       tableData: [
         {
           name: "1Z101000  工程经济",
@@ -174,10 +354,10 @@ export default {
       ]
     };
   },
-  methods:{
-      init(){
-          alert('暂未完成')
-      }
+  methods: {
+    init() {
+      alert("暂未完成");
+    }
   }
 };
 </script>
@@ -186,12 +366,13 @@ export default {
 .qbHome {
   width: 100%;
   background-color: #f1f5f9;
+  
   .qbHome_container {
     width: 1555px;
     margin: 0 auto;
-    height: 1000px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 130px;
     // 左侧内容
     aside {
       width: 1000px;
@@ -296,8 +477,8 @@ export default {
               color: #4187e9;
               font-size: 12px;
             }
-            .iconqianbi{
-                color: #4a90ff;
+            .iconqianbi {
+              color: #4a90ff;
             }
             .title {
               border-bottom: 1px solid #eeeeee;
@@ -331,9 +512,104 @@ export default {
               }
             }
           }
-        //   题的列表
-          .questionList{
+          //   题的列表
+          .questionList {
+            background-color: white;
+            margin-top: 20px;
+            padding-bottom: 30px;
+            .title {
+              display: flex;
+              justify-content: start;
+              font-size: 20px;
+              color: #333333;
+              line-height: 70px;
+              height: 70px;
+              padding-right: 20px;
+              border-bottom: 1px solid #eeeeee;
+              padding: 0 40px;
 
+              & > div {
+                margin-right: 40px;
+                cursor: pointer;
+                &.active {
+                  color: #4187e9;
+                  border-bottom: 3px solid #4187e9;
+                  border-top-left-radius: 3px;
+                  border-top-right-radius: 3px;
+                  border-bottom-left-radius: 3px;
+                  border-bottom-right-radius: 3px;
+                }
+              }
+            }
+            // 内容
+            .content {
+              padding: 30px 40px;
+              ul {
+                display: flex;
+                justify-content: start;
+                flex-wrap: wrap;
+                .item {
+                  width: 25%;
+                  padding-right: 15px;
+                  box-sizing: border-box;
+                  position: relative;
+                  &:nth-child(4n) {
+                    padding-right: 0;
+                  }
+                  &:nth-child(n + 5) {
+                    margin-top: 20px;
+                  }
+                  // 内容盒子
+                  .box {
+                    border: 6px solid #f1f5f9;
+                    border-radius: 5px;
+                    position: relative;
+                    padding: 100px 0 38px;
+                    p {
+                      font-size: 16px;
+                      color: #333333;
+                      text-align: center;
+                    }
+                    p:first-child {
+                      position: absolute;
+                      top: -6px;
+                      right: 20px;
+                      background-repeat: no-repeat;
+                      width: 46px;
+                      height: 83px;
+                      padding: 15px 9px;
+                      box-sizing: border-box;
+                      color: #4a90ff;
+                      font-size: 14px;
+                    }
+                    p:nth-child(3),
+                    p:nth-child(4) {
+                      margin-top: 15px;
+                    }
+                    p:nth-child(5) {
+                      margin-top: 25px;
+                      color: #999999;
+                    }
+                  }
+                  // 遮罩
+                  .zhezhao {
+                    width: 120px;
+                    height: 120px;
+                    background: #000;
+                    opacity: 0.4;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    border-radius: 50%;
+                    font-size: 90px;
+                    color: white;
+                    line-height: 120px;
+                    text-align: center;
+                  }
+                }
+              }
+            }
           }
         }
       }

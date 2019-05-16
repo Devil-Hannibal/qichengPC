@@ -34,3 +34,6 @@
     left: 0;
     right: 0;
 }
+.qbHome  .el-pagination{
+  text-align: center;
+}
