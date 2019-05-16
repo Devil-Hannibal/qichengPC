@@ -94,10 +94,26 @@
                     <div class="nav_content">
                         <ul class="nav_item">
                             <li>教师</li>
-                            <li></li>
+                            <li class="iconfont iconarrow-left1"></li>
                             <li class="nav_item_content">
-                                <div>教师资格</div>
-                                <div>教师荣誉</div>
+                                <div><a href="#">教师资格</a></div>
+                                <div><a href="#">教师荣誉</a></div>
+                            </li>
+                        </ul>
+                        <ul class="nav_item">
+                            <li>教师</li>
+                            <li class="iconfont iconarrow-left1"></li>
+                            <li class="nav_item_content">
+                                <div><a href="#">教师资格</a></div>
+                                <div><a href="#">教师荣誉</a></div>
+                            </li>
+                        </ul>
+                        <ul class="nav_item">
+                            <li>教师</li>
+                            <li class="iconfont iconarrow-left1"></li>
+                            <li class="nav_item_content">
+                                <div><a href="#">教师资格</a></div>
+                                <div><a href="#">教师荣誉</a></div>
                             </li>
                         </ul>
                     </div>
@@ -126,15 +142,21 @@
                 </div>
                 <div class="swiper-slide" style="height: 100%;width:100%;position: relative;" id="2">
                     <img class="swiper_Img" :src="bannerImg2" alt="" style="width:100%;height:100%;">
-                    <p style="width: 100%;height:100%;position:absolute;top:0;left:0;z-index: 999;background: rgba(225,225,225,.6);color:#333;display: flex;justify-content: center;align-items : center;font-size:48px;">口碑好，通过率高</p>
+                    <transition enter-active-class="animated zoomIn" leave-active-class="animated bounceOut" :duration="5000">
+                        <p v-show="Bimg2_animate" style="width: 100%;height:100%;position:absolute;top:0;left:0;z-index: 999;background: rgba(225,225,225,.6);color:#333;display: flex;justify-content: center;align-items : center;font-size:48px;">口碑好，通过率高</p>
+                    </transition>
                 </div>
                 <div class="swiper-slide" style="height: 100%;width:100%;position: relative;" id="3">
                     <img class="swiper_Img" :src="bannerImg3" alt="" style="width:100%;height:100%;">
-                    <p style="width: 100%;height:100%;position:absolute;top:0;left:0;z-index: 999;background: rgba(225,225,225,.6);color:#333;display: flex;justify-content: center;align-items : center;font-size:48px;">启发式、人性化、个性化、实战式</p>
+                    <transition enter-active-class="animated rotateIn" leave-active-class="animated bounceOut" :duration="5000">
+                        <p v-show="Bimg3_animate" style="width: 100%;height:100%;position:absolute;top:0;left:0;z-index: 999;background: rgba(225,225,225,.6);color:#333;display: flex;justify-content: center;align-items : center;font-size:48px;">启发式、人性化、个性化、实战式</p>
+                    </transition>
                 </div>
                 <div class="swiper-slide" style="height: 100%;width:100%;position: relative;" id="4">
                     <img class="swiper_Img" :src="bannerImg4" alt="" style="width:100%;height:100%;">
-                    <p style="width: 100%;height:100%;position:absolute;top:0;left:0;z-index: 999;background: rgba(225,225,225,.6);color:#333;display: flex;justify-content: center;align-items : center;font-size:48px;">启发式、人性化、个性化、实战式</p>
+                    <transition enter-active-class="animated pulse" leave-active-class="animated bounceOut" :duration="5000">
+                        <p v-show="Bimg4_animate" style="width: 100%;height:100%;position:absolute;top:0;left:0;z-index: 999;background: rgba(225,225,225,.6);color:#333;display: flex;justify-content: center;align-items : center;font-size:48px;">启发式、人性化、个性化、实战式</p>
+                    </transition>
                     <!--<my-footer class="footer"></my-footer>-->
                 </div>
                 <!--<div class="swiper-slide swiper-slide-active" style="height:100%; margin-bottom: 30px;">Slide 1</div>
@@ -153,7 +175,7 @@
         </div>
         <!-- 轮播 结束-->
         <!--<router-view style="height:500px"></router-view>-->
-        <!-- <div class="footer" style="display: none">
+        <div class="footer" style="display: none">
             <div class="top">
                 <div class="main">
                     <p>
@@ -190,7 +212,7 @@
                 </div>
             </div>
             <div class="bottom">Copyright Reserved 2018 福州启成教育信息咨询有限公司 版权所有 沪ICP备17043689号</div>
-        </div> -->
+        </div>
     </div>
 </template>
 
@@ -201,12 +223,11 @@
     import banner3 from "../../static/images/yc-banner3.png"
     import banner4 from "../../static/images/yc-banner4.png"
 
-
-
     import logo0 from "./../../static/images/logo.png";
     import ewm from "./../../static/images/ewm.png";
     import logo from "./../../static/images/logo.png";
-  
+
+    import animate from "animate.css"
     export default {
         name:'HelloWord',
         data(){
@@ -217,6 +238,9 @@
                 bannerImg2:banner2,
                 bannerImg3:banner3,
                 bannerImg4:banner4,
+                Bimg2_animate:false, //banner图片动画
+                Bimg3_animate:false, //banner图片动画
+                Bimg4_animate:false, //banner图片动画
 
 
                 logo0 ,//logo背景
@@ -238,7 +262,7 @@
                         el: '.swiper-pagination',
                     },
                 });*/
-
+                let _this=this;
                 let swiper = new Swiper('.swiper-container', {
                     direction: 'vertical',
                     slidesPerView: 1,
@@ -255,16 +279,25 @@
                                 document.getElementsByClassName('header')[0].style.display="block";
                                 document.getElementsByClassName('footer')[0].style.display="none";
                                 document.getElementsByClassName('header_nav')[0].style.top="152px";
+                                _this.Bimg2_animate=_this.Bimg3_animate=_this.Bimg4_animate=false;
                             }
                             else if(swiper_slide_active[0].getAttribute("id") == 4){
                                 document.getElementsByClassName('header')[0].style.display="none";
                                 document.getElementsByClassName('footer')[0].style.display="block";
                                 document.getElementsByClassName('header_nav')[0].style.top="0px";
+                                if(swiper_slide_active[0].getAttribute("id")==4){
+                                    _this.Bimg4_animate=true
+                                }
                             }
                             else if(swiper_slide_active[0].getAttribute("id")>1 && swiper_slide_active[0].getAttribute("id")<4){
                                 document.getElementsByClassName('header')[0].style.display="none";
                                 document.getElementsByClassName('footer')[0].style.display="none";
                                 document.getElementsByClassName('header_nav')[0].style.top="0px";
+                                if(swiper_slide_active[0].getAttribute("id")==2){
+                                    _this.Bimg2_animate=true
+                                }else if(swiper_slide_active[0].getAttribute("id")==3){
+                                    _this.Bimg3_animate=true
+                                }
                             }
                         }
                     }
@@ -454,11 +487,22 @@
         display: flex;justify-content:flex-start;
     }
     .header_nav>div>div{width: 192px;height:48px;background:#4a90ff ;
-        display: flex;justify-content: center;align-items : center;}
+        display: flex;justify-content: center;align-items : center;position: relative;}
 
     .header_nav>div>div>p{font-size:18px;color:#fff; }
+    .header_nav>div>div:hover{cursor: pointer; }
+    .header_nav>div>div:hover p{color:#333; }
+    .header_nav>div>div .nav_content{position: absolute;top:48px;left:0px; padding:36px;background: #fff;}
 
-
+    .nav_content .nav_item{height:35px;width:1200px;border-bottom: 1px solid #dddddd;box-sizing: border-box;display: flex;justify-content: flex-start;align-items: center;background: #fff;}
+    .nav_content .nav_item>li{height:34px;text-align: center;line-height: 34px;}
+    .nav_content .nav_item>li:first-child{width:140px;}
+    .nav_content .nav_item>li:nth-child(2){width:30px;}
+    .nav_content .nav_item>li:nth-child(3){display: flex;justify-content: flex-start;align-items: center;}
+    .nav_content .nav_item>li:nth-child(3) div a{display:block;margin: 0 14px;color:#999;}
+    .nav_content .nav_item>li:nth-child(3) div a:hover{color:#4a90ff;}
+    .header_nav>div>div .nav_content{display:none;}
+    .header_nav>div>div:hover .nav_content{display: block;}
 
 
 
