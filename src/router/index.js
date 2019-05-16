@@ -9,7 +9,7 @@ import JoinDetails from '@/components/about/JoinDetails'  //诚聘英才
 
 
 // // 题库
-// import QbHome from '@/components/questionBank/QbHome'  //题库首页
+import QbHome from '@/components/questionBank/QbHome'  //题库首页
 
 Vue.use(Router)
 
@@ -35,8 +35,8 @@ export default new Router({
       ]
     },
     // 题库路由
-    // {
-    //   path: '/qsHome', name: 'qbHome', component: QbHome  //路由首页
-    // },
+    {
+      path: '/qbHome', name: 'qbHome', component: QbHome  //路由首页
+    },
   ]
 })

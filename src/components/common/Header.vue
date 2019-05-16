@@ -67,9 +67,9 @@
       </div>
       <!-- 搜索 -->
       <div class="search" :class="{posFloat:titleWidth==1200}">
-        <span class="iconfont iconsearch pos"  :class="{pos1500:titleWidth==1500}"></span>
-        <input type="text" placeholder="请输入考试类别，查看考试资讯。" :class="{input1500:titleWidth==1500}">
-        <button :class="{button1500:titleWidth==1500}">搜索</button>
+        <span class="iconfont iconsearch pos"  :class="{pos1500:titleWidth>1500}"></span>
+        <input type="text" placeholder="请输入考试类别，查看考试资讯。" :class="{input1500:titleWidth>1500}">
+        <button :class="{button1500:titleWidth>1500}">搜索</button>
       </div>
       <!-- /联系电话 -->
 
