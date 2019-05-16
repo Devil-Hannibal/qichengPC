@@ -1,0 +1,36 @@
+
+/* 课程首页Element元素样式修改 */
+.qbHome .el-table td {
+  border: none;
+  height: 40px;
+  padding: 8px 0px;
+  font-size: 14px;
+  color: #333333;
+  
+}
+.qbHome .el-table__row{
+  cursor:pointer;
+}
+.qbHome .el-table--scrollable-y .el-table__body-wrapper::-webkit-scrollbar {
+  display: none;
+  border: none;
+}
+
+.qbHome .el-table th>.cell {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 400;
+}
+
+.qbHome .el-table th:first-child>.cell {
+  padding-left: 40px;
+}
+.qbHome .el-table td, .el-table th.is-leaf{
+    border: none;
+}
+.qbHome  .el-table::before{
+    width: 0;
+    height: 0;
+    left: 0;
+    right: 0;
+}

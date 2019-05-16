@@ -247,6 +247,7 @@ export default {
     .input1500{
       width: 535px;
       border:1px solid #4a90ff;
+      background-color: #f1f5f9;
       
     }
     button {
