@@ -94,7 +94,7 @@
                     <div class="nav_content">
                         <ul class="nav_item">
                             <li>教师</li>
-                            <li class="iconfont iconarrow-left1"></li>
+                            <li class="iconfont iconic_arrow_r"></li>
                             <li class="nav_item_content">
                                 <div><a href="#">教师资格</a></div>
                                 <div><a href="#">教师荣誉</a></div>
@@ -102,7 +102,7 @@
                         </ul>
                         <ul class="nav_item">
                             <li>教师</li>
-                            <li class="iconfont iconarrow-left1"></li>
+                            <li class="iconfont iconic_arrow_r"></li>
                             <li class="nav_item_content">
                                 <div><a href="#">教师资格</a></div>
                                 <div><a href="#">教师荣誉</a></div>
@@ -110,7 +110,7 @@
                         </ul>
                         <ul class="nav_item">
                             <li>教师</li>
-                            <li class="iconfont iconarrow-left1"></li>
+                            <li class="iconfont iconic_arrow_r"></li>
                             <li class="nav_item_content">
                                 <div><a href="#">教师资格</a></div>
                                 <div><a href="#">教师荣誉</a></div>
