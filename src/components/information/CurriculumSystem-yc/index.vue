@@ -55,56 +55,20 @@
         font-family: -apple-system-font, "Helvetica Neue", sans-serif;
     }
     .yc-qf:after{ content:"";display:block;clear:both}
-    *{margin:0;padding:0;}
     .CurriculumSystem{background: #f7f9fe;}
-    .yc-system-content{width:1200px;margin: 0 auto;padding-bottom: 40px;}
+    .yc-system-content{width:1200px;margin: 0 auto;}
     .yc-system-head{display: flex;justify-content: space-between;align-content: center;}
 
     .yc-system-head li:first-child h1{font-size:24px;font-weight: normal; margin-top: 30px;}
     .yc-system-head li:first-child h2{font-size:14px;font-weight: normal; margin-top: 10px;color:#999;}
-    .yc-system-head li:last-child{display: flex;justify-content: space-between;align-content: center;}
-    .yc-system-head li:last-child p a{display:block;color:#999;}
+    .yc-system-head li:last-child{display: flex;justify-content:flex-start;padding-top: 60px;}
+    .yc-system-head li:last-child p a{display:block;color:#999;font-size: 14px;}
     .yc-system-head li:last-child p:last-child{margin-left:15px; }
     .yc-system-head li:last-child p a:hover{color:#4187e9;cursor: pointer;}
+
+
 </style>
-<!--
-            <ul class="yc-system-head">
-                <li>
-                    <h1>课程体系</h1>
-                    <h2>Curriculum system</h2>
-                </li>
-                <li>
-                    <p>面试</p>
-                    <p>笔试</p>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="">
-                        <div class="iconfont"></div>
-                        <p>学时：100课时</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="iconfont"></div>
-                        <p>价格：9000￥</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="iconfont"></div>
-                        <p>试听入口</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="iconfont"></div>
-                        <p>报名</p>
-                    </a>
-                </li>
-            </ul>
--->
+
 
 
 

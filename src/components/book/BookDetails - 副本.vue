@@ -16,22 +16,22 @@
             <div class="buy_center">
                 <div class="buy_center_left">            <!--放大镜-->
                     <!--<div :style="imgStyle"></div>-->
-                        <!-- Swiper -->
-                        <div class="swiper-container gallery-top swiper-container-initialized swiper-container-horizontal" style="width:100%;height:502px;">
-                            <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-5450px, 0px, 0px); width:100%;height:502px;">
-                                <div v-for="item in 5" class="swiper-slide" :style="imgStyle"><img :src="BookDetails1" style="width:100%;height:100%;"></div>
-                            </div>
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next swiper-button-white" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
-                            <div class="swiper-button-prev swiper-button-white" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"></div>
-                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    <!-- Swiper -->
+                    <div class="swiper-container gallery-top swiper-container-initialized swiper-container-horizontal" style="width:100%;height:502px;">
+                        <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-5450px, 0px, 0px); width:100%;height:502px;">
+                            <div v-for="item in 8" class="swiper-slide"><pic-zoom :url="BookDetails1" style="width:100%;height:100%;" :scale="3"></pic-zoom></div>
                         </div>
-                        <div class="swiper-container gallery-thumbs swiper-container-initialized swiper-container-horizontal swiper-container-free-mode swiper-container-thumbs">
-                            <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-876.571px, 0px, 0px);">
-                                <div  v-for="item in 5" class="swiper-slide" style="width:25%;height:100px;margin-top: 3px; margin-right: 10px;box-sizing: border-box;"><img :src="BookDetails1" style="width:100%;height:100%;"></div>
-                            </div>
-                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next swiper-button-white" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
+                        <div class="swiper-button-prev swiper-button-white" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"></div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                    <div class="swiper-container gallery-thumbs swiper-container-initialized swiper-container-horizontal swiper-container-free-mode swiper-container-thumbs">
+                        <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-876.571px, 0px, 0px);">
+                            <div  v-for="item in 8" class="swiper-slide" style="width:20%;height:100px;margin-top: 3px; margin-right: 10px;box-sizing: border-box;"><img :src="BookDetails1" style="width:100%;height:100%;"></div>
                         </div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
 
 
 
@@ -109,6 +109,7 @@
     import BookDetails1 from "../../../static/images/yc_bookDetails1.png"
     import BookDetails2 from "../../../static/images/yc_bookDetails2.png"
     import BookDetails3 from "../../../static/images/yc_bookDetails3.png"
+    import PicZoom from 'vue-piczoom'
     //import animate from "animate.css"
     export default {
         name:'BookDetails',
@@ -143,7 +144,8 @@
         },
         components: {
             "my-header": Header,
-            "my-footer": Footer
+            "my-footer": Footer,
+            PicZoom
         },
         mounted(){
             this.getData();
@@ -153,7 +155,7 @@
 
                 let galleryThumbs = new Swiper('.gallery-thumbs', {
                     spaceBetween: 10,
-                    slidesPerView: 4,
+                    slidesPerView: 5,
                     freeMode: true,
                     watchSlidesVisibility: true,
                     watchSlidesProgress: true,
@@ -195,13 +197,14 @@
 
     .buy_center{height:605px;width:1200px;margin:0 auto;display: flex;justify-content: flex-start;}
     .buy_center_left{height:605px;width:500px;}
+    .buy_center_left:hover{cursor: pointer;}
 
     .buy_center_right{height:605px;width:660px;margin-left: 40px;}
     .buy_center_right h1{font-size: 18px;margin-top: 75px;height:38px;
         overflow:hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
     .buy_center_right ul{display: flex;justify-content: flex-start;align-items : center;
-    background: url("../../../static/images/yc_bookDetails2.png") no-repeat center;
-    background-size: cover;height:57px;width:660px;margin-top: 13px;}
+        background: url("../../../static/images/yc_bookDetails2.png") no-repeat center;
+        background-size: cover;height:57px;width:660px;margin-top: 13px;}
     .buy_center_right ul>li{color:#fff;}
     .buy_center_right ul>li:first-child{font-size: 24px;margin-left: 20px;}
     .buy_center_right ul>li:nth-child(2){font-size: 44px;margin-left: 9px;}
@@ -238,5 +241,9 @@
     .goodsDetails_center>div{display: flex;justify-content: center;padding-top: 58px;padding-bottom: 58px;}
 
 
+</style>
+<style>
+    .mouse-cover-canvas{left:880px !important;top:184px !important;}
+    .mouse-cover{/*display: none !important;*/top:0 !important;left:0 !important;opacity: 0;}
 </style>
 

@@ -40,13 +40,17 @@ export default new Router({
     },
     {   //book路由
       path: '/book',
-      name: 'Book',
+      name: 'book',
+      component: () => import("@/components/book/Book-yc")
+    },
+    {   //book详情路由
+      path: '/book/bookdetails',
+      name: 'bookdetails',
       component: () => import("@/components/book/BookDetails-yc")
-
     },
     {   //资讯主模块路由
       path: '/information',
-      name: 'Book',
+      name: 'information',
       component: () => import("@/components/information/Information-yc"),
       children: [
           {
@@ -81,15 +85,20 @@ export default new Router({
           {                    //资讯页课程体系 笔试路由
               path: '/curriculumsystem/courseWritten',
               name: 'courseWritten',
-              component: () => import("@/components/information/CurriculumSystem-yc/CourseWritten"),
+              component: () => import("@/components/information/CurriculumSystem-yc/CourseWritten-yc"),
           },
           {                     //资讯页课程体系 面试路由
               path: '/curriculumsystem/courseInterview',
               name: 'courseInterview',
-              component: () => import("@/components/information/CurriculumSystem-yc/CourseInterview"),
+              component: () => import("@/components/information/CurriculumSystem-yc/CourseInterview-yc"),
           },
 
       ]
+    },
+    {   //注意事项路由
+      path: '/note',
+      name: 'note',
+      component: () => import("@/components/information/Note-yc")
     },
     {   //导航页路由
       path: '/navpage',
@@ -100,6 +109,11 @@ export default new Router({
       path: '/environment',
       name: 'environment',
       component: () => import("@/components/other/SchoolEnvironment-yc")
+    },
+    {   //购物车路由
+      path: '/shopping',
+      name: 'shopping',
+      component: () => import("@/components/other/ShoppingCart-yc")
     },
   ]
 })
