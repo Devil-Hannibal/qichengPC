@@ -12,11 +12,13 @@
   "dependencies": {
     "animate.css": "^3.7.0",
     "axios": "^0.18.0",
+    "echarts": "^4.2.1",
     "element-ui": "^2.8.2",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
     "swiper": "^4.5.0",
     "vue": "^2.5.2",
+    "vue-echarts": "^4.0.2",
     "vue-piczoom": "^1.0.6",
     "vue-router": "^3.0.1",
     "vuex": "^3.1.1"
