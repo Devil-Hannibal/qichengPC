@@ -115,5 +115,27 @@ export default new Router({
       name: 'shopping',
       component: () => import("@/components/other/ShoppingCart-yc")
     },
+    {  //课程路由
+      path: '/course',
+      name: 'course',
+      component: () => import("@/components/course/Course-yc")
+    },
+    {  //课程录播观看记录路由
+        path: '/coursebackrecord',
+        name: 'coursebackrecord',
+        component: () => import("@/components/course/CoursePlaybackRecord")
+    },
+    {  //课程讲师资料路由
+      path: '/teacherdata',
+      name: 'teacherdata',
+      component: () => import("@/components/course/TeacherData")
+    },
+    {  //学生评价路由
+      path: '/appraise',
+      name: 'appraise',
+      component: () => import("@/components/course/StudentAppraise")
+    },
   ]
+
+
 })

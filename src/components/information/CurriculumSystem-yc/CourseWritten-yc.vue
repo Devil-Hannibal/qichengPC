@@ -45,7 +45,7 @@
                 </router-link>
             </li>
         </ul>
-
+        <!--报名弹窗-->
         <el-dialog title="填写报名信息" :visible.sync="centerDialogVisible" width="30%" center>
             <div style="color:#4187e9;font-size:16px;margin-top: 20px;">报名信息：</div>
             <div style="margin-top: 20px;">
@@ -66,7 +66,7 @@
                 <el-button type="primary" @click="signUpSubmit" style="width: 100%;height:40px;">报名</el-button>
             </div>
         </el-dialog>
-
+        <!--报名成功弹窗-->
         <el-dialog class="yc-DialogVisibleA" title="恭喜你已报名成功！" :visible.sync="centerDialogVisibleA" width="30%" center>    <!--报名成功弹框-->
             <div style="width: 100%;height:1px;background: #999;"></div>
             <div style="margin-top: 33px;font-size: 14px;text-align: center;color:#999;">我们将秉承学员至上，用心服务</div>
@@ -114,10 +114,6 @@
 </script>
 
 <style lang="less" scoped>
-    body,div,ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,s,u,b,p,span,i,a,header,nav{
-        padding:0; margin:0; list-style:none; text-decoration:none; font-size:12px; color:#333;
-        font-family: -apple-system-font, "Helvetica Neue", sans-serif;
-    }
     .yc-qf:after{ content:"";display:block;clear:both}
     *{margin:0;padding:0;}
     .CourseWritten{width: 1200px;margin: 0 auto;}

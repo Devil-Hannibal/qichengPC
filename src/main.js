@@ -12,18 +12,23 @@ import './assets/changeElementUi.css';
 
 import './../static/iconfont/iconfont.css'		//引入字体样式
 
-
-
-
 import "swiper/dist/css/swiper.min.css"   //引入swiper样式
 
 import store from './store'
 
-Vue.prototype.$axios=axios
 
+import ECharts from 'vue-echarts/components/ECharts' //引入echart
+import 'echarts/lib/chart/bar'
+import 'echarts/lib/chart/line'
+import echarts from 'echarts'
+
+
+
+
+Vue.prototype.$axios=axios
 Vue.use(ElementUI);
 Vue.config.productionTip = false
-
+Vue.component('chart', ECharts);
 
 
 /* eslint-disable no-new */

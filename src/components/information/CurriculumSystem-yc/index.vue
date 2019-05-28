@@ -50,10 +50,6 @@
 </script>
 
 <style lang="less" scoped>
-    body,div,ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,s,u,b,p,span,i,a,header,nav{
-        padding:0; margin:0; list-style:none; text-decoration:none; font-size:12px; color:#333;
-        font-family: -apple-system-font, "Helvetica Neue", sans-serif;
-    }
     .yc-qf:after{ content:"";display:block;clear:both}
     .CurriculumSystem{background: #f7f9fe;}
     .yc-system-content{width:1200px;margin: 0 auto;}
