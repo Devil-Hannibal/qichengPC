@@ -168,24 +168,35 @@
         </div>
         <my-footer></my-footer>
         <!--报名弹窗-->
-        <el-dialog title="填写报名信息" :visible.sync="centerDialogVisible" width="30%" center>
-            <div style="color:#4187e9;font-size:16px;margin-top: 20px;">报名信息：</div>
+        <el-dialog title="填写预约信息" :visible.sync="centerDialogVisible" width="30%" center>
+            <div style="color:#4187e9;font-size:16px;margin-top: 20px;">预约人信息：</div>
             <div style="margin-top: 20px;">
-                <el-input v-model="input" placeholder="姓名："></el-input>
+                <el-input v-model="input" placeholder="学员姓名："></el-input>
+            </div>
+            <div style="margin-top: 10px;">
+                <el-input v-model="input" placeholder="学员学号："></el-input>
             </div>
             <div style="margin-top: 10px;">
                 <el-input v-model="input" placeholder="联系电话："></el-input>
             </div>
-            <div style="color:#4187e9;font-size:16px;margin-top: 20px;">报名课程信息：</div>
+            <div style="color:#4187e9;font-size:16px;margin-top: 20px;">预约课程信息：</div>
             <div style="margin-top: 20px;">
-                <el-input v-model="input" placeholder="课程名称："></el-input>
+                <el-input v-model="input" placeholder="预约时间："></el-input>
             </div>
             <div style="margin-top: 10px;">
-                <el-input v-model="input" placeholder="报名批次：">
+                <el-input v-model="input" placeholder="预约课程：">
 
                 </el-input></div>
             <div style="margin-top: 20px;">
-                <el-button type="primary" @click="signUpSubmit" style="width: 100%;height:40px;">报名</el-button>
+                <el-button type="primary" @click="signUpSubmit" style="width: 100%;height:40px;">预约</el-button>
+            </div>
+        </el-dialog>
+        <!--报名成功弹窗-->
+        <el-dialog class="yc-DialogVisibleA" title="恭喜你已报名成功！" :visible.sync="centerDialogVisibleA" width="30%" center>    <!--报名成功弹框-->
+            <div style="width: 100%;height:1px;background: #999;"></div>
+            <div style="margin-top: 33px;font-size: 14px;text-align: center;color:#999;">我们将秉承学员至上，用心服务</div>
+            <div style="margin-top: 26px;text-align: center;">
+                <el-button type="primary" @click="centerDialogVisibleA = false" style="width: 30%;height:40px;">去购买</el-button>
             </div>
         </el-dialog>
     </div>
@@ -199,10 +210,12 @@
         data(){
             return {
                 partentwidth:1560, //给子组件传头部宽度
-
                 active: 0,       //步骤条
                 orgOptions : {},
-                currentPage:2    //当前页
+                currentPage:2,    //当前页
+                centerDialogVisible:false,     //预约弹窗
+                centerDialogVisibleA:true,      //预约成功弹窗
+                input:'',
             }
         },
         components: {
@@ -265,7 +278,10 @@
             },
             handleCurrentChange(){    //当前页改变
 
-            }
+            },
+            signUpSubmit(){
+
+            },
         }
     }
 </script>
@@ -387,9 +403,17 @@
 
     .Pagination{height:100px;display: flex;justify-content:center;}
 </style>
-<!--
-
--->
-
+<style>
+    /*预约弹出修改*/
+    .Course .el-dialog__header{background:#4187e9 !important;}
+    .Course .el-dialog__title{color:#fff;}
+    .Course .el-dialog__close{color:#fff;}
+    /*预约成功弹出修改*/
+    .Course .yc-DialogVisibleA .el-dialog__header{background:#fff !important;}
+    .Course .yc-DialogVisibleA .el-dialog__title{color:#999;}
+    .Course .yc-DialogVisibleA .el-dialog__close{color:#999;}
+    .Course .yc-DialogVisibleA .el-dialog{border-radius: 10px;}
+    .Course .yc-DialogVisibleA .el-dialog__header{border-radius: 10px;}
+</style>
 
 
